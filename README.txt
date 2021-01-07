@@ -1,7 +1,7 @@
 Assignment 3: Truth Discovery and Credibility Analysis
 Nick Milikich
 CSE 60437 Social Sensing & Cyber-Physical Systems
-March 6, 2019
+March 6, 2020
 
 This project implements a maximum likelihood algorithm for truth discovery in a dataset. The algorithm relies on being able to convert social data into a matrix of sources and claims. The social sensing matrix contains a row for each source and a column for each claim. Each entry contains a 1 if that source makes that claim, and a 0 if not. This is an implementation of algorithm 1 described in Wang et al. 2012. Algorithm returns two vectors of information: the predited truth of each claim (can be left as predicted probabilities, or converted to a binary result: 1 if the predicted probability of truth is greater than or equal to 0.5, 0 if not), and the predicted reliability of each source (the predicted probability that any claim is true given that that source made that claim).
 
